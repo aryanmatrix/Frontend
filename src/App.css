@@ -1,0 +1,116 @@
+.playlist-container {
+  background-color: #eeeeee;
+  padding: 20px;
+}
+
+.playlist-heading {
+  color: #4ecca3;
+}
+
+.all-songs {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+.all-song {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.playlist-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.playlist-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.search-container {
+  background-color: #eeeeee;
+  padding: 20px;
+}
+
+.search-heading {
+  color: #4ecca3;
+}
+
+.search-input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.search-button {
+  padding: 5px 10px;
+  background-color: #4ecca3;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.search-results {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.add-song-container {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #eeeeee;
+}
+
+.add-song-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-song-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-song-form label {
+  margin-bottom: 5px;
+}
+
+.add-song-form input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.add-song-form button {
+  padding: 10px 20px;
+  background-color: #4ecca3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-song-form button:hover {
+  background-color: #0056b3;
+}
+
+.del-btn {
+  float: right;
+  height: 100%;
+  background-color: #4ecca3;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  color: #ffffff;
+}
