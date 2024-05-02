@@ -11,7 +11,7 @@ const AddSong = (props) => {
 
     const handleAddSong = async () => {
         try {
-            await axios.post('http://localhost:5000/api/songs', { title, artist, album, duration, audioUrl });
+            await axios.post('https://musicplaylist.azurewebsites.net/api/songs', { title, artist, album, duration, audioUrl });
             // Optionally, you can update the state or trigger any other action after successful addition
             setTitle('');
             setArtist('');
