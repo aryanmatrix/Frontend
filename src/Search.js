@@ -26,7 +26,7 @@ const Search = (props) => {
     }, [props.value]);
 
     const handleSearch = () => {
-        axios.get(`http://localhost:5000/api/songs?title=${searchTerm}`)
+        axios.get(`https://musicplaylist.azurewebsites.net/api/songs?title=${searchTerm}`)
             .then(res => {
                 setSearchResults(res.data);
             })
@@ -60,7 +60,7 @@ const Search = (props) => {
 
     const handleDeleteSong = async (songId) => {
         try {
-            await axios.delete(`http://localhost:5000/api/songs/${songId}`);
+            await axios.delete(`https://musicplaylist.azurewebsites.net/api/songs/${songId}`);
             setAllSongs(allSongs.filter(song => song._id !== songId));
             // Optionally, you can also update other state variables that may depend on the song list
         } catch (error) {
