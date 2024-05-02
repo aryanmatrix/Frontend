@@ -16,7 +16,7 @@ const Search = (props) => {
     useEffect(() => {
         const fetchAllSongs = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/api/songs");
+                const response = await axios.get("https://musicplaylist.azurewebsites.net/api/songs");
                 setAllSongs(response.data);
             } catch (error) {
                 console.error("Error fetching all songs:", error);
